@@ -7,6 +7,14 @@ from . import forms
 def index (request):
     return render(request, 'producto/index.html')
 
+from django.views.generic import ListView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+
+class ProductoCategoriaList(ListView):
+    model = models.ProductoCategoria
+    template_name = 'producto/producto_categoria_list.html'
+    context_object_name = 'categorias'
+
 
 def producto_categoria_list(request):
     categorias=models.ProductoCategoria.objects.all()
