@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block TITULO %}
+    RESULTADOS DE LA BUSQUEDA
+{% endblock TITULO %}
+{% block CONTENIDO %}
+<h2>NOMBRE</h2>
+{% for cliente in clientes_nombre  %}
+    <p>{{ cliente | upper }}</p>
+{% endfor %}
+<h2>nacimiento</h2>
+{% for cliente  in clientes_nacimiento  %}
+        <p> {{cliente}}</p>
+{% endfor %}
+
+<h2>CLIENTE SIN PAIS</h2>
+{% for cliente in clientes_sin_pais  %}
+    <p> {{cliente}} </p>
+{% endfor %}
+    <a href="{% url 'index' %}">Ir al inicio</a>
+{% endblock  %}
