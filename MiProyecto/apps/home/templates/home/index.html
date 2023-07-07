@@ -4,14 +4,14 @@
     <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://i.pinimg.com/564x/99/5c/f6/995cf65121193ee0fe9a6adc78f2f9d7.jpg" alt="..." /></div>
                 <div class="col-lg-5">
-                    <h1 class="font-weight-light">Punto de Encuentro</h1>
-                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                    <a class="btn btn-primary" href="#!">Call to Action!</a>
+                    <h1 class="font-weight-light" href="{% url 'home:index' %}">Punto de Encuentro</h1>
+                    <p>¡Bienvenid@s a nuestro emprendimiento familiar! Este es un proyecto que nace del amor de hacer cosas con dedicación, paciencia, bsucando que cada pieza sea única con la hermosa calidad de siempre. Soy Pía, espero que disfrutes dela experiencia</p>
+                    <a class="btn btn-primary" href="{% url 'producto:index' %}">Quiero ver los productos</a>
                 </div>
             </div>
             <!-- Call to Action-->
             <div class="card text-white bg-secondary my-5 py-4 text-center">
-                <div class="card-body"><p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p></div>
+                <div class="card-body"><p class="text-white m-0">El 15% de la ganancia de nuestros productos van destinados a la fabricacion de piezas para donar a diferentes asociaciones y voluntariados, acompañandolos en su tarea y ayudando a los que mas lo necesitan.</p></div>
             </div>
             <!-- Content Row-->
             <div class="row gx-4 gx-lg-5">

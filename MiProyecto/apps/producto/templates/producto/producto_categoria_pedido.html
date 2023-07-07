@@ -1,0 +1,15 @@
+{% extends 'producto/index.html' %}
+
+{% block content_producto %}
+
+    <h3>Crear pedidos de Productos</h3>
+
+        <form method="post">
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Encargar</button>
+        </form>
+    <a href="producto:index">Volver al indice de productos</a>
+{% endblock content_producto %}
+
+    

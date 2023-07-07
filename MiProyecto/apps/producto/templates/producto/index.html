@@ -2,4 +2,10 @@
 
 {% block content %}
     <h1>Productos</h1>
+
+    {% block content_producto %}
+        <h3>Categorias de Productos</h3>
+        <a href="{% url 'producto:producto_categoria_list' %}">Listar</a> <br>
+        <a href="{% url 'producto:producto_categoria_pedido' %}">Encargar producto</a>
+    {% endblock content_producto %}
 {% endblock content %}
